@@ -4,8 +4,9 @@
  let userNAme = prompt('what is your Name ?');
  console.log(userNAme);
 alert('Welcome  to my website')
+function questions (favoriteSeason, travel , favoriteAnimal , speakEnglish ,favoriteColor){
 
-  let favoriteSeason = prompt('Is the spring my favorite season?').toLowerCase();
+   favoriteSeason = prompt('Is the spring my favorite season?').toLowerCase();
 
 
  favoriteSeason = favoriteSeason.toLowerCase();
@@ -21,7 +22,7 @@ alert('Welcome  to my website')
    sum=sum+1
  }
 
- let travel = prompt('Do I like traveling?').toLowerCase();
+  travel = prompt('Do I like traveling?').toLowerCase();
 
 
 
@@ -41,7 +42,7 @@ alert('Welcome  to my website')
    sum=sum+1
  }
 
- let favoriteAnimal = prompt('Is the horse my favorite animal ?').toLowerCase();
+ favoriteAnimal = prompt('Is the horse my favorite animal ?').toLowerCase();
 
 
 
@@ -61,7 +62,7 @@ else {
   sum=sum+1
 }
 
-let speakEnglish = prompt('can i speak english?').toLowerCase();
+ speakEnglish = prompt('can i speak english?').toLowerCase();
 
 
 
@@ -83,7 +84,7 @@ speakEnglish = speakEnglish.toLowerCase();
   sum=sum+1
  }
 
- let favoriteColor = prompt('Is my favorite color pink?').toLowerCase();
+ favoriteColor = prompt('Is my favorite color pink?').toLowerCase();
 
   favoriteColor = favoriteColor.toLowerCase();
 
@@ -99,6 +100,8 @@ sum=sum+1
    sum=sum+1
  }
 
+}
+questions();
 
 
 //==========  today   ===========\\
@@ -119,47 +122,48 @@ sum=sum+1
 
 
 
-
+function g (num){
 
 for (let i = 4; i >= 0; i--) {
-   let num= prompt('guss num if the num >10?(you have only ['+i+'] attemt)')
+    num= prompt('guss num if the num <10?(you have only ['+i+'] attemt)')
   
   if ('6' === num) {
-    alert("You are right :)")
+    alert("You are right :)");
     i=0
   }
   
 }
 
-alert("the right answer is 6 :)")
+alert("the right answer is 6 :)");
 
 
-
-
-
-
-
-
-
-
-   let sportName = ['running', 'swimming', 'walk', 'basketball', 'Climbing', 'Boxing', 'football', 'Tennis', 'Cycling', 'Skydiving'];
-
-  console.log(sportName[2]);
-  console.log('swimming '.length);
-
-
-for(let i = 0; i < sportName.length; i++) {
-  console.log(sportName[i]);
 }
+g();
+
+
+
+
+//function s (sportName){}
+
+
+  //  sportName = ['running', 'swimming', 'walk', 'basketball', 'Climbing', 'Boxing', 'football', 'Tennis', 'Cycling', 'Skydiving'];
+
+  //console.log(sportName[2]);
+  //console.log('swimming '.length);
+
+
+//for(let i = 0; i < sportName.length; i++) {
+  //console.log(sportName[i]);
+//}
 
 
 
 
 
 
+function a(Amman){
 
-
-let Amman = prompt('Am I live in Amman?').toLowerCase();
+ Amman = prompt('Am I live in Amman?').toLowerCase();
 let final = 0;
  while((Amman !== 'no' && Amman !== 'n' && Amman !== 'yes' && Amman !== 'y')) {
  Amman = prompt('Am I live in Amman?? please enter yes, no, n, y!').toLowerCase();
@@ -172,12 +176,17 @@ if (final===6) {
 
  if(Amman === 'yes' || Amman === 'y') {
  alert('rghit ');
- } else {
+ }
+ else {
+
    alert('nop');
    sum=sum+1
  }
+ 
  alert("the right answer is yes :)")
 
+}
+a();
  alert('the num of fals answer is'+ sum)
 
 
